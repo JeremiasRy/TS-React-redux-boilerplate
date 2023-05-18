@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { genreReducer } from "./genreReducer";
+import authorizationReducer from '../redux/reducers/authReducer'
 const store = configureStore({
     reducer: {
-        genreReducer: genreReducer.slice.reducer
+        authorization: authorizationReducer
     },
 });
 
